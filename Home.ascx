@@ -11,6 +11,13 @@
 <%@ Register TagPrefix="dnn" TagName="MENU" Src="~/DesktopModules/DDRMenu/Menu.ascx" %>
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
 
+<%
+    
+    //https://github.com/BlackrockDigital/startbootstrap-business-casual/blob/master/index.html
+    
+
+    %>
+
 <dnn:META ID="mobileScale" runat="server" Name="viewport" Content="width=device-width,initial-scale=1" />
 
 <dnn:JQUERY ID="dnnjQuery" runat="server" jQueryHoverIntent="true" />

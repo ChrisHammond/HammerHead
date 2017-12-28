@@ -23,6 +23,7 @@
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">.\</SolutionDir>
     <RestorePackages>true</RestorePackages>
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -97,6 +98,7 @@
     <Content Include="Edit.doctype.xml" />
     <Content Include="i\icon_message_active.png" />
     <Content Include="i\icon_notification_active.png" />
+    <Content Include="js\HammerHead.js" />
     <Content Include="PopupSkin.ascx" />
     <Content Include="Home.doctype.xml" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
