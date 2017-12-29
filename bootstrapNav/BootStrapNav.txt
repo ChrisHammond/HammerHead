@@ -1,12 +1,12 @@
-<ul class="nav navbar-nav">
+<ul class="navbar-nav mx-auto">
 [*>NODE]
 </ul>
 [>NODE]
-    <li class="[?NODE]dropdown [/?][?SELECTED]active[/?]">
+    <li class="[?NODE]dropdown [/?][?SELECTED]active[/?] nav-item px-lg-4">
     [?ENABLED]
-        <a href="[=URL]">[=TEXT] [?NODE]<b class="caret"></b>[/?]</a>
+        <a href="[=URL]" class="nav-link text-uppercase text-expanded">[=TEXT] [?NODE]<b class="caret"></b>[/?]</a>
     [?ELSE]
-        <a href="#">[=TEXT] [?NODE]<b class="caret"></b>[/?]</a>
+        <a href="#" class="nav-link text-uppercase text-expanded">[=TEXT] [?NODE]<b class="caret"></b>[/?]</a>
     [/?]
     [?NODE]
         <ul class="dropdown-menu">

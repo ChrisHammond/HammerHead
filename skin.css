@@ -65,9 +65,8 @@ ul.dnnAdminTabNav {
 
 /* Addition to bootstrap menu styles */
 /* Displace second and deeper level menus right from their parent.  */
-.dropdown-menu .dropdown-menu
-{
-  margin-left:160px;
+.dropdown-menu .dropdown-menu {
+    margin-left: 160px;
 }
 
 
@@ -102,7 +101,7 @@ ul.dnnAdminTabNav {
 /*------------------------------------------------*/
 
 .navbar-right {
-    height: 51px;
+    /*    height: 51px; */
 }
 
     .navbar-right .registerGroup,
@@ -126,17 +125,17 @@ ul.dnnAdminTabNav {
             float: left;
         }
 
-        .navbar-right .registerGroup .buttonGroup {
+        /*.navbar-right .registerGroup .buttonGroup {
             margin-right: 0;
-        }
+        }*/
 
-        .navbar-right .registerGroup a,
+        /*.navbar-right .registerGroup a,
         .navbar-right .loginGroup a {
             display: block;
             position: relative;
-            height: 50px;
+            /*height: 30px;*/
             min-width: 12px;
-            padding: 15px 15px 0 15px;
+            /*padding: 15px 15px 0 15px;*/
             vertical-align: middle;
         }
 
@@ -164,7 +163,7 @@ ul.dnnAdminTabNav {
                 overflow: hidden;
                 font-size: 0;
                 text-indent: -9999px;
-            }
+            }*/
 
     .navbar-right .userMessages a,
     .navbar-right .userNotifications a {
@@ -184,24 +183,26 @@ ul.dnnAdminTabNav {
             background: url('i/icon_notification.png') no-repeat center center;
         }
 
-    .navbar-right .registerGroup a span {
+    /*.navbar-right .registerGroup a span {
         display: inline-block;
         min-width: 7px;
         margin-right: 3px;
         text-align: center;
-    }
+    }*/
 
 
 
     .navbar-right .registerGroup .userProfileImg a {
-        min-width: 50px;
+        /*min-width: 50px;
         min-height: 50px;
+            */
         padding: 0;
     }
 
     .navbar-right .registerGroup a img {
-        height: 50px;
+        /*height: 50px;
         width: 50px;
+        */
     }
 
     /* Login Group Styles */
@@ -252,13 +253,15 @@ ul.dnnAdminTabNav {
 
 /* fix for DNN dropdown lists being cut off*/
 
-.dnnDropDownList .selected-item, .dnnDropDownList .selected-item a  {
+.dnnDropDownList .selected-item, .dnnDropDownList .selected-item a {
     height: 35px !important;
 }
 
 
 /* fix for coloring on DNN Check boxes and radio */
-.dnnCheckbox .mark, .dnnRadiobutton .mark{ background: none;}
+.dnnCheckbox .mark, .dnnRadiobutton .mark {
+    background: none;
+}
 
 
 /* StartBootstrap Business Casual CSS styles */
@@ -334,12 +337,12 @@ p {
 }
 
 #mainNav {
-    background-color: rgba(47, 23, 15, 0.9);
+    background-color: #1a0578;
     font-family: 'Raleway';
 }
 
     #mainNav .navbar-brand {
-        color: #e6a756;
+        color: #fff;
     }
 
     #mainNav .navbar-nav .nav-item .nav-link {
@@ -348,8 +351,10 @@ p {
     }
 
     #mainNav .navbar-nav .nav-item.active .nav-link {
-        color: #e6a756;
+        color: #fff;
     }
+
+
 
 @media (min-width: 992px) {
     #mainNav .navbar-nav .nav-item .nav-link {
@@ -357,13 +362,33 @@ p {
     }
 
         #mainNav .navbar-nav .nav-item .nav-link:hover {
-            color: rgba(255, 255, 255, 0.4);
+            color: rgba(255, 255, 255, 0.9);
         }
 
     #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-        color: #e6a756;
+        color: rgba(255, 255, 255, 1.0);
     }
 }
+
+
+
+#subNav {
+    background-color: #3e3d43;
+    font-family: 'Raleway';
+}
+
+    #subNav .navbar-brand {
+        color: #fff;
+    }
+
+    #subNav .navbar-nav .nav-item .nav-link {
+        color: rgba(255, 255, 255, 0.7);
+        font-weight: 800;
+    }
+
+    #subNav .navbar-nav .nav-item.active .nav-link {
+        color: #fff;
+    }
 
 .btn-xl {
     font-weight: 700;
@@ -476,7 +501,7 @@ p {
 
         .list-hours .list-hours-item.today {
             font-weight: bold;
-            color: #e6a756;
+            color: #fff;
         }
 
 @media (min-width: 992px) {
@@ -499,7 +524,7 @@ p {
 }
 
 .bg-primary {
-    background-color: #e6a756 !important;
+    background-color: #fff !important;
 }
 
 .btn {
@@ -507,8 +532,8 @@ p {
 }
 
 .btn-primary {
-    background-color: #e6a756;
-    border-color: #e6a756;
+    background-color: #fff;
+    border-color: #fff;
 }
 
     .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
@@ -519,4 +544,3 @@ p {
 .font-weight-light {
     font-weight: 100 !important;
 }
-

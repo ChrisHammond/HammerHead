@@ -12,11 +12,11 @@
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
 
 <%
-    
-    //https://github.com/BlackrockDigital/startbootstrap-business-casual/blob/master/index.html
-    
 
-    %>
+//https://github.com/BlackrockDigital/startbootstrap-business-casual/blob/master/index.html
+
+
+%>
 
 <dnn:META ID="mobileScale" runat="server" Name="viewport" Content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <dnn:JQUERY ID="dnnjQuery" runat="server" jQueryHoverIntent="true" />
@@ -27,65 +27,42 @@
 <!-- Custom fonts for this template -->
 
 <h1 class="site-heading text-center text-white d-none d-lg-block">
-    
-      <span class="site-heading-upper text-primary mb-3"><dnn:LOGO runat="server" id="dnnLOGO" /><%=PortalSettings.ActiveTab.Title%></span>
-      <span class="site-heading-lower"><%=PortalSettings.ActiveTab.KeyWords%></span>
-    </h1>
+
+    <span class="site-heading-upper text-primary mb-3">
+        <dnn:LOGO runat="server" ID="dnnLOGO" />
+        <%=PortalSettings.ActiveTab.Title%></span>
+    <span class="site-heading-lower"><%=PortalSettings.ActiveTab.KeyWords%></span>
+</h1>
 
 
 
- <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+<nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#"><%=PortalSettings.PortalName%></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
 
             <dnn:MENU MenuStyle="BootStrapNav" runat="server"></dnn:MENU>
-
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="index.html">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
-            </li>
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
-            </li>
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="store.html">Store</a>
-            </li>
-          </ul>
+            
         </div>
-      </div>
-    </nav>
+    </div>
+</nav>
 
 
 
-<div class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-expand-sm navbar-dark py-lg-2" id="subNav">
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            
-        </div>
         <div class="navbar-collapse collapse">
-            
 
-            <ul class="nav navbar-nav navbar-right">
+
+           <ul class="nav navbar-nav navbar-right mx-auto">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <div class="searchBox">
+                            <div class="searchBox textuppercase">
                                 <dnn:Search id="dnnSearch" runat="server" showsite="false" showweb="false" cssclass="btn btn-success btn-xs" />
                             </div>
                         </li>
@@ -93,7 +70,7 @@
 
                 </li>
                 <li>
-                    <dnn:LOGIN ID="dnnLogin" CssClass="LoginLink" runat="server" LegacyMode="false" />
+                    <dnn:LOGIN ID="dnnLogin" CssClass="LoginLink textuppercase" runat="server" LegacyMode="false" />
                 </li>
                 <li>
                     <dnn:USER ID="dnnUser" runat="server" LegacyMode="false" />
@@ -102,11 +79,9 @@
         </div>
         <!--/.nav-collapse -->
 
-
-
     </div>
-</div>
-
+    </div>
+</nav>
 <div id="CarouselPane" runat="server" class="carousel slide" containertype="G" containername="HammerHead" containersrc="Blank.ascx" />
 
 <div class="container">
@@ -146,9 +121,9 @@
         <div id="FooterPane" runat="server" class="col-md-12" />
         <div id="CopyRightPane" class="SkinLink col-md-12 center">
             <div class="col-md-12">
-                <dnn:copyright ID="dnnCopyright" runat="server" />
-                <dnn:terms id="dnnTerms" runat="server" />
-                <dnn:privacy id="dnnPrivacy" runat="server" />
+                <dnn:COPYRIGHT ID="dnnCopyright" runat="server" />
+                <dnn:TERMS ID="dnnTerms" runat="server" />
+                <dnn:PRIVACY ID="dnnPrivacy" runat="server" />
             </div>
         </div>
     </div>
