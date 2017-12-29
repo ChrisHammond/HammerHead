@@ -18,12 +18,53 @@
 
     %>
 
-<dnn:META ID="mobileScale" runat="server" Name="viewport" Content="width=device-width,initial-scale=1" />
-
+<dnn:META ID="mobileScale" runat="server" Name="viewport" Content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <dnn:JQUERY ID="dnnjQuery" runat="server" jQueryHoverIntent="true" />
 <dnn:DnnJsInclude ID="bootstrapJS" runat="server" FilePath="js/bootstrap.min.js" PathNameAlias="SkinPath" Priority="10" />
 <dnn:DnnCssInclude ID="bootStrapCSS" runat="server" FilePath="css/bootstrap.min.css" PathNameAlias="SkinPath" Priority="14" />
-<dnn:DnnJsInclude ID="bluImpJS" runat="server" FilePath="js/jquery.blueimp-gallery.min.js" PathNameAlias="SkinPath" />
+<dnn:DnnCssInclude ID="DnnCssInclude1" runat="server" FilePath="css/hhfonts.css" PathNameAlias="SkinPath" Priority="14" />
+
+<!-- Custom fonts for this template -->
+
+<h1 class="site-heading text-center text-white d-none d-lg-block">
+    
+      <span class="site-heading-upper text-primary mb-3"><dnn:LOGO runat="server" id="dnnLOGO" /><%=PortalSettings.ActiveTab.Title%></span>
+      <span class="site-heading-lower"><%=PortalSettings.ActiveTab.KeyWords%></span>
+    </h1>
+
+
+
+ <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+
+            <dnn:MENU MenuStyle="BootStrapNav" runat="server"></dnn:MENU>
+
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="store.html">Store</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
 
 <div class="navbar navbar-default" role="navigation">
     <div class="container">
@@ -34,12 +75,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <div class="navbar-brand">
-                <dnn:LOGO runat="server" id="dnnLOGO" />
-            </div>
+            
         </div>
         <div class="navbar-collapse collapse">
-            <dnn:MENU MenuStyle="BootStrapNav" runat="server"></dnn:MENU>
+            
 
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
@@ -62,6 +101,9 @@
             </ul>
         </div>
         <!--/.nav-collapse -->
+
+
+
     </div>
 </div>
 

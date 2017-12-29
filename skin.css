@@ -265,7 +265,7 @@ ul.dnnAdminTabNav {
 
 body {
     font-family: 'Lora';
-    background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/bg.jpg");
+    background: linear-gradient(rgba(47, 121, 204, 0.65), rgba(47, 73, 121, 0.65)), url("i/hhbg.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -495,7 +495,7 @@ p {
 }
 
 .text-primary {
-    color: #e6a756 !important;
+    color: #FFF !important;
 }
 
 .bg-primary {
