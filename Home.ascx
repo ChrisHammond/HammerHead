@@ -50,30 +50,24 @@
     </div>
 </nav>
 
+<!-- TODO: create a control to show user notifications -->
 
-
-<nav class="navbar navbar-expand-sm navbar-dark py-lg-2" id="subNav">
+<nav class="navbar navbar-expand-sm navbar-dark py-lg-1" id="subNav">
     <div class="container">
         <div class="navbar-collapse collapse">
-
-
+            
            <ul class="nav navbar-nav navbar-right mx-auto">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <div class="searchBox textuppercase">
-                                <dnn:Search id="dnnSearch" runat="server" showsite="false" showweb="false" cssclass="btn btn-success btn-xs" />
-                            </div>
-                        </li>
-                    </ul>
+               
+                <li class="nav-item px-sm-1">
+                    <dnn:LOGIN ID="dnnLogin" CssClass="dnnSubNavLink text-uppercase" runat="server" LegacyMode="false" />
+                </li>
+                <li class="nav-item px-sm-1">
+                    <dnn:USER ID="dnnUser" runat="server" CssClass="dnnSubNavLink text-uppercase" LegacyMode="false" ShowAvatar="false" ShowUnreadMessages="false"  />
+                </li>
+                <li class="nav-item px-sm-1">
+                    
+                                <dnn:Search id="dnnSearch" runat="server" showsite="false" showweb="false" cssclass="btn btn-success btn-sm dnnSearchButton" />
 
-                </li>
-                <li>
-                    <dnn:LOGIN ID="dnnLogin" CssClass="LoginLink textuppercase" runat="server" LegacyMode="false" />
-                </li>
-                <li>
-                    <dnn:USER ID="dnnUser" runat="server" LegacyMode="false" />
                 </li>
             </ul>
         </div>

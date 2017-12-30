@@ -83,8 +83,8 @@ ul.dnnAdminTabNav {
 }
 
 
-.navbar-default .navbar-nav > li > div > ul > li > a, .navbar-default .LoginLink {
-    color: #777;
+.navbar-default .navbar-nav > li > div > ul > li > a, .dnnLoginLink {
+    color: #fff;
 }
 
     .navbar-default .navbar-nav > li > div > a:hover,
@@ -96,13 +96,15 @@ ul.dnnAdminTabNav {
     }
 
 
-/*------------------------------------------------*/
-/* LOGIN */
-/*------------------------------------------------*/
-
-.navbar-right {
-    /*    height: 51px; */
-}
+    .dnnLoginLink{
+        
+    }
+    /*------------------------------------------------*/
+    /* LOGIN */
+    /*------------------------------------------------*/
+    .navbar-right {
+        /*    height: 51px; */
+    }
 
     .navbar-right .registerGroup,
     .navbar-right .registerGroup *,
@@ -117,12 +119,12 @@ ul.dnnAdminTabNav {
     }
 
         .navbar-right .registerGroup li:first-child:hover {
-            border-left: #222;
+            border:none;
         }
 
         /* Register Group Styles */
         .navbar-right .registerGroup li {
-            float: left;
+            float: right;
         }
 
         /*.navbar-right .registerGroup .buttonGroup {
@@ -345,7 +347,7 @@ p {
         color: #fff;
     }
 
-    #mainNav .navbar-nav .nav-item .nav-link {
+    #mainNav .navbar-nav .nav-item .nav-link, .dnnSubNavLink {
         color: rgba(255, 255, 255, 0.7);
         font-weight: 800;
     }
@@ -388,6 +390,10 @@ p {
 
     #subNav .navbar-nav .nav-item.active .nav-link {
         color: #fff;
+    }
+
+    #subNav .dnnSubNavLink{
+        font-size:.75em;
     }
 
 .btn-xl {
@@ -541,6 +547,22 @@ p {
         border-color: #df902a;
     }
 
+
+.btn-success {
+    color: #fff;
+    background-color: #350af5;
+    border-color: #350af5;
+}
+
+
+
+
 .font-weight-light {
     font-weight: 100 !important;
 }
+
+.searchInputContainer
+{margin:0;}
+
+.dnnSearchButton{margin:-3px 0 0 0;}
+
