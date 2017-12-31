@@ -45,7 +45,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
 
             <dnn:MENU MenuStyle="BootStrapNav" runat="server"></dnn:MENU>
-            
+
         </div>
     </div>
 </nav>
@@ -55,18 +55,18 @@
 <nav class="navbar navbar-expand-sm navbar-dark py-lg-1" id="subNav">
     <div class="container">
         <div class="navbar-collapse collapse">
-            
-           <ul class="nav navbar-nav navbar-right mx-auto">
-               
+
+            <ul class="nav navbar-nav navbar-right mx-auto">
+
                 <li class="nav-item px-sm-1">
                     <dnn:LOGIN ID="dnnLogin" CssClass="dnnSubNavLink text-uppercase" runat="server" LegacyMode="false" />
                 </li>
                 <li class="nav-item px-sm-1">
-                    <dnn:USER ID="dnnUser" runat="server" CssClass="dnnSubNavLink text-uppercase" LegacyMode="false" ShowAvatar="false" ShowUnreadMessages="false"  />
+                    <dnn:USER ID="dnnUser" runat="server" CssClass="dnnSubNavLink text-uppercase" LegacyMode="false" ShowAvatar="false" ShowUnreadMessages="false" />
                 </li>
                 <li class="nav-item px-sm-1">
-                    
-                                <dnn:Search id="dnnSearch" runat="server" showsite="false" showweb="false" cssclass="btn btn-success btn-sm dnnSearchButton" />
+
+                    <dnn:SEARCH ID="dnnSearch" runat="server" ShowSite="false" ShowWeb="false" CssClass="btn btn-success btn-sm dnnSearchButton" />
 
                 </li>
             </ul>

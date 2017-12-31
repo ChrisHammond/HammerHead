@@ -364,7 +364,7 @@ p {
     }
 
         #mainNav .navbar-nav .nav-item .nav-link:hover {
-            color: rgba(255, 255, 255, 0.9);
+            color: rgba(255, 255, 255, 1.0);
         }
 
     #mainNav .navbar-nav .nav-item.active .nav-link:hover {
