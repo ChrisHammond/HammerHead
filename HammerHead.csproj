@@ -87,6 +87,7 @@
     <Content Include="bootstrapNav\BootStrapNav.js" />
     <Content Include="bootstrapNav\BootStrapNav.txt" />
     <Content Include="Containers\Blank.ascx" />
+    <Content Include="Containers\ctaNoTitle.ascx" />
     <Content Include="Containers\Main.ascx" />
     <Content Include="css\bootstrap-grid.css" />
     <Content Include="css\bootstrap-grid.min.css" />
@@ -94,8 +95,10 @@
     <Content Include="css\bootstrap-reboot.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\hhfonts.css" />
     <Content Include="Edit.ascx" />
     <Content Include="Edit.doctype.xml" />
+    <Content Include="home.css" />
     <Content Include="i\icon_message_active.png" />
     <Content Include="i\icon_notification_active.png" />
     <Content Include="js\HammerHead.js" />
@@ -155,6 +158,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\bootstrap.min.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

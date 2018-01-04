@@ -65,7 +65,6 @@
                     <dnn:USER ID="dnnUser" runat="server" CssClass="dnnSubNavLink text-uppercase" LegacyMode="false" ShowAvatar="false" ShowUnreadMessages="false" />
                 </li>
                 <li class="nav-item px-sm-1">
-
                     <dnn:SEARCH ID="dnnSearch" runat="server" ShowSite="false" ShowWeb="false" CssClass="btn btn-success btn-sm dnnSearchButton" />
 
                 </li>
@@ -74,7 +73,7 @@
         <!--/.nav-collapse -->
 
     </div>
-    </div>
+
 </nav>
 <div id="CarouselPane" runat="server" class="carousel slide" containertype="G" containername="HammerHead" containersrc="Blank.ascx" />
 
@@ -98,6 +97,14 @@
         <div id="LeftPane" runat="server" class="col-md-3" />
         <div id="ContentPaneRight" runat="server" class="col-md-9" />
     </div>
+
+</div>
+
+<section class="page-section cta"  id="ctaPane" containertype="G" containername="HammerHead" containersrc="ctaNoTitle.ascx"  runat="server">
+        
+</section>
+
+<div class="container">
     <div id="UserProfile" class="row">
         <div id="UserProfileLeft" runat="server" class="col-md-2" />
         <div id="UserProfileContent" runat="server" class="col-md-10" />
@@ -123,13 +130,3 @@
     </div>
 </div>
 
-<!-- gallery and carousel controls, hidden by default -->
-<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-use-bootstrap-modal="false">
-    <div class="slides"></div>
-    <h3 class="title"></h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <a class="play-pause"></a>
-    <ol class="indicator"></ol>
-</div>

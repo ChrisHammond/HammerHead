@@ -3,3 +3,4 @@ C:\Websites\dnndev.me\bin\HammerHead.pdb
 C:\Websites\dnndev.me\Portals\_default\Skins\HammerHead\obj\Release\HammerHead.dll
 C:\Websites\dnndev.me\Portals\_default\Skins\HammerHead\obj\Release\HammerHead.pdb
 C:\Websites\dnndev.me\Portals\_default\Skins\HammerHead\obj\Release\HammerHead.csprojResolveAssemblyReference.cache
+C:\Websites\dnndev.me\Portals\_default\Skins\HammerHead\obj\Release\HammerHead.csproj.CoreCompileInputs.cache
