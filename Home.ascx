@@ -100,8 +100,7 @@
 
 </div>
 
-<section class="page-section cta"  id="ctaPane" containertype="G" containername="HammerHead" containersrc="ctaNoTitle.ascx"  runat="server">
-        
+<section class="page-section cta" id="CallToActionPane" containertype="G" containername="HammerHead" containersrc="ctaNoTitle.ascx" runat="server">
 </section>
 
 <div class="container">
@@ -113,20 +112,30 @@
 
         <div id="BottomPane" runat="server" class="col-md-12" />
     </div>
-    <div id="FooterRow" class="row">
+</div>
 
-        <div id="FooterRowLeft" runat="server" class="col-md-4" />
-        <div id="FooterRowMiddle" runat="server" class="col-md-4" />
-        <div id="FooterRowRight" runat="server" class="col-md-4" />
+<footer class="footer text-faded text-center py-5">
 
-        <div id="FooterPane" runat="server" class="col-md-12" />
-        <div id="CopyRightPane" class="SkinLink col-md-12 center">
-            <div class="col-md-12">
-                <dnn:COPYRIGHT ID="dnnCopyright" runat="server" />
-                <dnn:TERMS ID="dnnTerms" runat="server" />
-                <dnn:PRIVACY ID="dnnPrivacy" runat="server" />
+    <div class="container">
+
+        <div id="FooterRow" class="row">
+
+            <div id="FooterRowLeft" runat="server" class="col-md-4" />
+            <div id="FooterRowMiddle" runat="server" class="col-md-4" />
+            <div id="FooterRowRight" runat="server" class="col-md-4" />
+
+            <div id="FooterPane" runat="server" class="col-md-12" />
+            <div id="CopyRightPane" class="SkinLink col-md-12 center">
+                <div class="col-md-12">
+                    <dnn:COPYRIGHT ID="dnnCopyright" runat="server" />
+                    <dnn:TERMS ID="dnnTerms" runat="server" />
+                    <dnn:PRIVACY ID="dnnPrivacy" runat="server" />
+                </div>
             </div>
         </div>
+        
+
     </div>
-</div>
+
+</footer>
 

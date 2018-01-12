@@ -87,6 +87,9 @@
     <Content Include="bootstrapNav\BootStrapNav.js" />
     <Content Include="bootstrapNav\BootStrapNav.txt" />
     <Content Include="Containers\Blank.ascx" />
+    <Content Include="Containers\WhiteBgSmallTitle.ascx" />
+    <Content Include="Containers\WhiteBgTitle.ascx" />
+    <Content Include="Containers\WhiteBgNoTitle.ascx" />
     <Content Include="Containers\ctaNoTitle.ascx" />
     <Content Include="Containers\Main.ascx" />
     <Content Include="css\bootstrap-grid.css" />
