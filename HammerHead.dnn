@@ -74,6 +74,18 @@
             <containerFile>
               <name>Blank.ascx</name>
             </containerFile>
+            <containerFile>
+              <name>ctaNoTitle.ascx</name>
+            </containerFile>
+            <containerFile>
+              <name>WhiteBgNoTitle.ascx</name>
+            </containerFile>
+            <containerFile>
+              <name>WhiteBgSmallTitle.ascx</name>
+            </containerFile>
+            <containerFile>
+              <name>WhiteBgTitle.ascx</name>
+            </containerFile>
           </containerFiles>
         </component>
       </components>

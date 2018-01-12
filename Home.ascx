@@ -31,7 +31,7 @@
     <span class="site-heading-upper text-primary mb-3">
         <dnn:LOGO runat="server" ID="dnnLOGO" />
         <%=PortalSettings.ActiveTab.Title%></span>
-    <span class="site-heading-lower"><%=PortalSettings.ActiveTab.KeyWords%></span>
+    <span class="site-heading-lower"><%=PortalSettings.ActiveTab.Description%></span>
 </h1>
 
 
@@ -114,7 +114,7 @@
     </div>
 </div>
 
-<footer class="footer text-faded text-center py-5">
+<footer class="footer text-center py-5">
 
     <div class="container">
 
