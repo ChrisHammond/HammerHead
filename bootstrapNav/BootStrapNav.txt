@@ -4,9 +4,9 @@
 [>NODE]
     <li class="[?NODE]dropdown [/?][?SELECTED]active[/?] nav-item px-lg-4">
     [?ENABLED]
-        <a href="[=URL]" class="nav-link text-uppercase text-expanded">[=TEXT] [?NODE]<b class="caret"></b>[/?]</a>
+        <a href="[=URL]" class="nav-link text-uppercase text-expanded [?NODE]dropdown-toggle[/?]" [?NODE]data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"[/?]>[=TEXT] [?NODE]<b class="caret"></b>[/?]</a>
     [?ELSE]
-        <a href="#" class="nav-link text-uppercase text-expanded">[=TEXT] [?NODE]<b class="caret"></b>[/?]</a>
+        <a href="#" class="nav-link text-uppercase text-expanded [?NODE]dropdown-toggle[/?]" [?NODE]data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"[/?]>[=TEXT] [?NODE]<b class="caret"></b>[/?]</a>
     [/?]
     [?NODE]
         <ul class="dropdown-menu">

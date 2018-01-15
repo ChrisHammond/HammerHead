@@ -342,7 +342,7 @@ p {
 }
 
 #mainNav {
-    background-color: #2f2f50;
+    background-color: #001155;
     font-family: 'Raleway';
 }
 
@@ -368,6 +368,11 @@ p {
 
         #mainNav .navbar-nav .nav-item .nav-link:hover {
             color: rgba(255, 255, 255, 1.0);
+        }
+
+        #mainNav .navbar-nav .dropdown-menu .nav-item .nav-link {
+            color: #001155;
+
         }
 
     #mainNav .navbar-nav .nav-item.active .nav-link:hover {
@@ -525,7 +530,7 @@ p {
 }
 
 .footer {
-    background-color: #38384c;
+    background-color: #002555;
 }
 
 .text-primary {
