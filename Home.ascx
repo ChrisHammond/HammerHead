@@ -30,7 +30,7 @@
 
     <span class="site-heading-upper text-primary mb-3">
         <dnn:LOGO runat="server" ID="dnnLOGO" />
-        <%=PortalSettings.ActiveTab.Title%></span>
+        <%=PortalSettings.ActiveTab.TabName%></span>
     <span class="site-heading-lower"><%=PortalSettings.ActiveTab.Description%></span>
 </h1>
 
