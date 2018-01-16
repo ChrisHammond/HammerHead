@@ -69,6 +69,10 @@
       <DependentUpon>Edit.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="SmallHeader.ascx.cs">
+      <DependentUpon>SmallHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="PopupSkin.ascx.cs">
       <DependentUpon>PopupSkin.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -101,6 +105,8 @@
     <Content Include="css\hhfonts.css" />
     <Content Include="Edit.ascx" />
     <Content Include="Edit.doctype.xml" />
+    <Content Include="SmallHeader.css" />
+    <Content Include="SmallHeader.ascx" />
     <Content Include="home.css" />
     <Content Include="i\icon_message_active.png" />
     <Content Include="i\icon_notification_active.png" />

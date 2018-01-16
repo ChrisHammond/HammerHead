@@ -1,0 +1,15 @@
+﻿body {
+    background: linear-gradient(rgba(47, 121, 204, 0.65), rgba(47, 73, 121, 0.65)), url("i/hhbg2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.site-heading {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: 'Raleway';
+}
+

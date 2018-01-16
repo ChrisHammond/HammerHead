@@ -18,7 +18,7 @@
 }
 
 a.btn-info, a.btn-info:visited, a.btn-primary, a.btn-primary:visited {
-    color: #fff;
+    color: #000;
 }
 
 .searchBox {
@@ -578,6 +578,8 @@ p {
 }
 
 
-.footer .SkinObject{
+.footer .SkinObject, .footer .Normal{
     color:#fff;
 }
+
+.cta.DNNEmptyPane {padding-top:0rem;padding-bottom:0rem;}
