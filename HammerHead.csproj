@@ -132,8 +132,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="HammerHead.dnn" />
-    <Content Include="Documentation\Documentation.css" />
-    <Content Include="Documentation\Documentation.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="BuildScripts\SkinPackage.targets" />

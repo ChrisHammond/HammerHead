@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("HammerHead")]
-[assembly: AssemblyDescription("A theme for DNNCMS")]
+[assembly: AssemblyDescription("A theme for DNNCMS by Christoc")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("HammerHead")]
