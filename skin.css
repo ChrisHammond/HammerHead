@@ -582,4 +582,9 @@ p {
     color:#fff;
 }
 
+
+.footer .bg-faded .Normal {
+    color: #444;
+}
+
 .cta.DNNEmptyPane {padding-top:0rem;padding-bottom:0rem;}
