@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Edit.ascx.cs" Inherits="Christoc.Skins.HammerHead.Edit" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SmallHeader.ascx.cs" Inherits="Christoc.Skins.HammerHead.Home" %>
 <%@ Register TagPrefix="dnn" TagName="LOGO" Src="~/Admin/Skins/Logo.ascx" %>
 <%@ Register TagPrefix="dnn" TagName="SEARCH" Src="~/Admin/Skins/Search.ascx" %>
 <%@ Register TagPrefix="dnn" TagName="USER" Src="~/Admin/Skins/User.ascx" %>
@@ -11,56 +11,64 @@
 <%@ Register TagPrefix="dnn" TagName="MENU" Src="~/DesktopModules/DDRMenu/Menu.ascx" %>
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
 
-<dnn:META ID="mobileScale" runat="server" Name="viewport" Content="width=device-width,initial-scale=1" />
 
+<dnn:META ID="mobileScale" runat="server" Name="viewport" Content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <dnn:JQUERY ID="dnnjQuery" runat="server" jQueryHoverIntent="true" />
 <dnn:DnnJsInclude ID="bootstrapJS" runat="server" FilePath="js/bootstrap.min.js" PathNameAlias="SkinPath" Priority="10" />
-<dnn:DnnCssInclude ID="bootStrapCSS" runat="server" FilePath="css/bootstrap.min.css" PathNameAlias="SkinPath" priority="14" />
-<dnn:DnnJsInclude ID="bluImpJS" runat="server" FilePath="js/jquery.blueimp-gallery.min.js" PathNameAlias="SkinPath" />
+<dnn:DnnCssInclude ID="bootStrapCSS" runat="server" FilePath="css/bootstrap.min.css" PathNameAlias="SkinPath" Priority="14" />
+<dnn:DnnCssInclude ID="DnnCssInclude1" runat="server" FilePath="css/hhfonts.css" PathNameAlias="SkinPath" Priority="14" />
+
+<!-- Custom fonts for this template -->
+
+<h1 class="site-heading text-center text-white d-none d-lg-block">
+    <span class="site-heading-upper text-primary mb-3">
+        <dnn:LOGO runat="server" ID="dnnLOGO" />
+        <%=PortalSettings.ActiveTab.TabName%></span>
+
+</h1>
 
 
-<div class="navbar navbar-default" role="navigation">
+
+<nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <div class="navbar-brand">
-                <dnn:LOGO runat="server" id="dnnLOGO" />
-            </div>
-        </div>
-        <div class="navbar-collapse collapse">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#"><%=PortalSettings.PortalName%></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+
             <dnn:MENU MenuStyle="BootStrapNav" runat="server"></dnn:MENU>
 
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <div class="searchBox">
-                                <dnn:Search id="dnnSearch" runat="server" showsite="false" showweb="false" cssclass="btn btn-success btn-xs" />
-                            </div>
-                        </li>
-                    </ul>
+        </div>
+    </div>
+</nav>
 
+<!-- TODO: create a control to show user notifications -->
+
+<nav class="navbar navbar-expand-sm navbar-dark py-lg-1" id="subNav">
+    <div class="container">
+        <div class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav navbar-right mx-auto">
+
+                <li class="nav-item px-sm-1">
+                    <dnn:LOGIN ID="dnnLogin" CssClass="dnnSubNavLink text-uppercase" runat="server" LegacyMode="false" />
                 </li>
-                <li>
-                    <dnn:LOGIN ID="dnnLogin" CssClass="LoginLink" runat="server" LegacyMode="false" />
+                <li class="nav-item px-sm-1">
+                    <dnn:USER ID="dnnUser" runat="server" CssClass="dnnSubNavLink text-uppercase" LegacyMode="false" ShowAvatar="false" ShowUnreadMessages="false" />
                 </li>
-                <li>
-                    <dnn:USER ID="dnnUser" runat="server" LegacyMode="false" />
+                <li class="nav-item px-sm-1">
+                    <dnn:SEARCH ID="dnnSearch" runat="server" ShowSite="false" ShowWeb="false" CssClass="btn btn-success btn-sm dnnSearchButton" />
+
                 </li>
             </ul>
         </div>
         <!--/.nav-collapse -->
+
     </div>
-</div>
 
+</nav>
 <div id="CarouselPane" runat="server" class="carousel slide" containertype="G" containername="HammerHead" containersrc="Blank.ascx" />
-
 
 <div class="container">
     <!--/Logo-->
@@ -71,6 +79,11 @@
 
     <div id="Content" class="row">
         <div id="ContentPane" runat="server" class="col-md-12" />
+        
+    </div>
+    <div id="TwoColContent" class="row">
+        <div id="Content9" runat="server" class="col-md-9" />
+        <div id="Right3" runat="server" class="col-md-3" />
     </div>
     <div id="MidContent" class="row">
         <div id="ThirdRowLeft" runat="server" class="col-md-4" />
@@ -78,39 +91,48 @@
         <div id="ThirdRowRight" runat="server" class="col-md-4" />
     </div>
     <div id="ContentLeftCol" class="row">
-        <div id="LeftPane" runat="server" class="col-md-3" />
-        <div id="ContentPaneRight" runat="server" class="col-md-6" />
-        <div id="RightPane" runat="server" class="col-md-3" />
+        <div id="LeftPane3" runat="server" class="col-md-3" />
+        <div id="PaneRight9" runat="server" class="col-md-9" />
     </div>
 
+</div>
+
+<section class="page-section cta" id="CallToActionPane" containertype="G" containername="HammerHead" containersrc="ctaNoTitle.ascx" runat="server">
+</section>
+
+<div class="container">
+    <div id="UserProfile" class="row">
+        <div id="UserProfileLeft" runat="server" class="col-md-2" />
+        <div id="UserProfileContent" runat="server" class="col-md-10" />
+    </div>
     <div id="BottomContent" class="row">
 
         <div id="BottomPane" runat="server" class="col-md-12" />
     </div>
-    <div id="FooterRow" class="row">
+</div>
 
-        <div id="FooterRowLeft" runat="server" class="col-md-4" />
-        <div id="FooterRowMiddle" runat="server" class="col-md-4" />
-        <div id="FooterRowRight" runat="server" class="col-md-4" />
+<footer class="footer text-center py-5">
 
-        <div id="FooterPane" runat="server" class="col-md-12" />
-        <div id="CopyRightPane" class="SkinLink col-md-12 center">
-            <div class="col-md-12">
-                <dnn:copyright ID="dnnCopyright" runat="server" />
-                <dnn:terms id="dnnTerms" runat="server" />
-                <dnn:privacy id="dnnPrivacy" runat="server" />
+    <div class="container">
+
+        <div id="FooterRow" class="row">
+
+            <div id="FooterRowLeft" runat="server" class="col-md-4" />
+            <div id="FooterRowMiddle" runat="server" class="col-md-4" />
+            <div id="FooterRowRight" runat="server" class="col-md-4" />
+
+            <div id="FooterPane" runat="server" class="col-md-12" />
+            <div id="CopyRightPane" class="SkinLink col-md-12 center">
+                <div class="col-md-12">
+                    <dnn:COPYRIGHT ID="dnnCopyright" runat="server" />
+                    <dnn:TERMS ID="dnnTerms" runat="server" />
+                    <dnn:PRIVACY ID="dnnPrivacy" runat="server" />
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
-<!-- gallery and carousel controls, hidden by default -->
-<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-    <div class="slides"></div>
-    <h3 class="title"></h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <a class="play-pause"></a>
-    <ol class="indicator"></ol>
-</div>
+
+    </div>
+
+</footer>
+

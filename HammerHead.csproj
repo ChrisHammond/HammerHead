@@ -105,6 +105,10 @@
     <Content Include="css\hhfonts.css" />
     <Content Include="Edit.ascx" />
     <Content Include="Edit.doctype.xml" />
+    <Content Include="Edit.css" />
+    <Content Include="i\hhbg.jpg" />
+    <Content Include="i\hhbg2.jpg" />
+    <Content Include="i\hhbg3.jpg" />
     <Content Include="SmallHeader.css" />
     <Content Include="SmallHeader.ascx" />
     <Content Include="home.css" />
