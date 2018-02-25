@@ -106,6 +106,7 @@
     <Content Include="Edit.ascx" />
     <Content Include="Edit.doctype.xml" />
     <Content Include="Edit.css" />
+    <Content Include="PopupSkin.css" />
     <Content Include="i\hhbg.jpg" />
     <Content Include="i\hhbg2.jpg" />
     <Content Include="i\hhbg3.jpg" />

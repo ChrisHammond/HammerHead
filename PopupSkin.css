@@ -1,0 +1,6 @@
+﻿body {
+    background-image:none !important; /* hack to make sure that the background image doesn't screw with the popup */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
