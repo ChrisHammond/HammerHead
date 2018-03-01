@@ -91,11 +91,17 @@
     <Content Include="bootstrapNav\BootStrapNav.js" />
     <Content Include="bootstrapNav\BootStrapNav.txt" />
     <Content Include="Containers\Blank.ascx" />
+    <Content Include="Containers\Blank.JPG" />
+    <Content Include="Containers\ctaNoTitle.jpg" />
+    <Content Include="Containers\Main.jpg" />
+    <Content Include="Containers\WhiteBgNoTitle.JPG" />
     <Content Include="Containers\WhiteBgSmallTitle.ascx" />
+    <Content Include="Containers\WhiteBgSmallTitle.JPG" />
     <Content Include="Containers\WhiteBgTitle.ascx" />
     <Content Include="Containers\WhiteBgNoTitle.ascx" />
     <Content Include="Containers\ctaNoTitle.ascx" />
     <Content Include="Containers\Main.ascx" />
+    <Content Include="Containers\WhiteBgTitle.JPG" />
     <Content Include="css\bootstrap-grid.css" />
     <Content Include="css\bootstrap-grid.min.css" />
     <Content Include="css\bootstrap-reboot.css" />
@@ -106,6 +112,8 @@
     <Content Include="Edit.ascx" />
     <Content Include="Edit.doctype.xml" />
     <Content Include="Edit.css" />
+    <Content Include="Edit.jpg" />
+    <Content Include="Home.jpg" />
     <Content Include="PopupSkin.css" />
     <Content Include="i\hhbg.jpg" />
     <Content Include="i\hhbg2.jpg" />
@@ -134,6 +142,7 @@
     <Content Include="skin.css" />
     <Content Include="ReleaseNotes.txt" />
     <Content Include="Home.ascx" />
+    <Content Include="Smallheader.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="HammerHead.dnn" />
