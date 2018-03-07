@@ -11,12 +11,6 @@
 <%@ Register TagPrefix="dnn" TagName="MENU" Src="~/DesktopModules/DDRMenu/Menu.ascx" %>
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
 
-<%
-
-//https://github.com/BlackrockDigital/startbootstrap-business-casual/blob/master/index.html
-
-
-%>
 
 <dnn:META ID="mobileScale" runat="server" Name="viewport" Content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <dnn:JQUERY ID="dnnjQuery" runat="server" jQueryHoverIntent="true" />
@@ -131,11 +125,9 @@
                     <dnn:TERMS ID="dnnTerms" runat="server" />
                     <dnn:PRIVACY ID="dnnPrivacy" runat="server" />
                 </div>
+                <a href="http://cjh.am/HammerHead" target="_blank" class="SkinObject">Design: HammerHead DNN Theme by Christoc.com</a>
             </div>
         </div>
-        
-
     </div>
-
 </footer>
 

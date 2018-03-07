@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="Christoc.Skins.HammerHead" type="Skin" version="00.00.02">
+    <package name="Christoc.Skins.HammerHead" type="Skin" version="01.00.00">
       <friendlyName>HammerHead</friendlyName>
       <description>A responsive DNN skin using Bootstrap 4. Requires installation via the Host/Extensions page.</description>
       <owner>
@@ -49,7 +49,7 @@
         </component>
       </components>
     </package>
-    <package name="Christoc.Skins.Containers.HammerHead" type="Container" version="00.00.02">
+    <package name="Christoc.Skins.Containers.HammerHead" type="Container" version="01.00.00">
       <friendlyName>HammerHead</friendlyName>
       <description>Containers for the HammerHead Skin package.</description>
       <owner>

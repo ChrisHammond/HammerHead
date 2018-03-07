@@ -18,16 +18,12 @@
 <dnn:DnnCssInclude ID="bootStrapCSS" runat="server" FilePath="css/bootstrap.min.css" PathNameAlias="SkinPath" Priority="14" />
 <dnn:DnnCssInclude ID="DnnCssInclude1" runat="server" FilePath="css/hhfonts.css" PathNameAlias="SkinPath" Priority="14" />
 
-<!-- Custom fonts for this template -->
-
 <h1 class="site-heading text-center text-white d-none d-lg-block">
     <span class="site-heading-upper text-primary mb-3">
         <dnn:LOGO runat="server" ID="dnnLOGO" />
         <%=PortalSettings.ActiveTab.TabName%></span>
 
 </h1>
-
-
 
 <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
@@ -128,11 +124,9 @@
                     <dnn:TERMS ID="dnnTerms" runat="server" />
                     <dnn:PRIVACY ID="dnnPrivacy" runat="server" />
                 </div>
+                <a href="http://cjh.am/HammerHead" target="_blank" class="SkinObject">Design: HammerHead DNN Theme by Christoc.com</a>
             </div>
         </div>
-
-
     </div>
-
 </footer>
 

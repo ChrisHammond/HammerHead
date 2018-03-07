@@ -124,11 +124,9 @@
                     <dnn:TERMS ID="dnnTerms" runat="server" />
                     <dnn:PRIVACY ID="dnnPrivacy" runat="server" />
                 </div>
+                <a href="http://cjh.am/HammerHead" target="_blank" class="SkinObject">Design: HammerHead DNN Theme by Christoc.com</a>
             </div>
         </div>
-
-
     </div>
-
 </footer>
 
