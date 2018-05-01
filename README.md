@@ -3,7 +3,7 @@ HammerHead
 
 Description
 -----------
-A DNN Theme built using Christoc's DNN Module and Skin Development Templates, this skin is build of Bootstrap 4. It is currently a work in progress.
+A DNN Theme built using Christoc's DNN Module and Skin Development Templates, this skin is build of Bootstrap 4.1. 
 
 Installation and Customization
 ------------------------------
