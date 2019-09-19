@@ -8,6 +8,16 @@
 
 	<h3>About the HammerHead</h3>
 
+	<h4>Version 00.00.02</h4><br />
+	Updated to bootstrap 4.3.1
+	<h5>Bug Fixes</h5>
+	<ul>
+			<li>Upgraded to Bootstrap V4.3.1</li>
+	</ul>
+	<br />
+	<br />
+
+
 	<h4>Version 00.00.01</h4><br />
 	Fixed issue with CSS for submenu items on mobile and upgraded bootstrap.
 	<h5>Bug Fixes</h5>
